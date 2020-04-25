@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+  </head>
+  <body>
+    <h1>title</h1>
+    <h3>CURRENT NEWS</h3>
+    <ul>
+       {% for source in sources%}
+           <li>{{ source.name}}</li>
+       {% endfor %}
+   </ul>
+  </body>
+</html>
