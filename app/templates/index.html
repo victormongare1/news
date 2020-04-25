@@ -1,14 +1,21 @@
+{% extends 'base.html'%}
 <!DOCTYPE html>
 <html>
   <head>
     <title>{{title}}</title>
   </head>
   <body>
-    <h1>{{title}}</h1>
-    <ul>
+    {% block content %}
+    <div class="container">
+    <h1 class="text-center">{{title}}</h1>
+    
        {% for source in sources%}
-           <li>{{ source.name}}</li>
+           <h3><b>{{ source.name}}</b></h3>
+            <p>{{source.description}}</p>
+            <p>Category : {{source.category}} news</p>
+             <a href="{{source.url}}">view more here</a> 
        {% endfor %}
-   </ul>
+    </div>
+    {% endblock %}
   </body>
 </html>

@@ -37,9 +37,9 @@ def process_results(source_list):
   for source_item in source_list:
     
     name = source_item.get('name')
-    description= source_item.get('url')
+    description= source_item.get('description')
     url= source_item.get('url')
-    category = source_item.get('vote_average')
+    category = source_item.get('category')
     
 
     if name:
