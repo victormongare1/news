@@ -1,5 +1,5 @@
 import urllib.request,json
-from models import SOURCE,ARTICLE
+from .models import SOURCE,ARTICLE
 apikey='d87c1c4fe09d43568c5366531dbdfa30'
 source_base_url=None
 def configure_request(app):
