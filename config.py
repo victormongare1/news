@@ -3,9 +3,10 @@ class Config:
   '''
   General configuration parent class
   '''
-  SOURCE_BASE_URL='https://newsapi.org/v2/sources?apiKey={}'
+  SOURCE_BASE_URL='https://newsapi.org/v2/sources?apiKey=d87c1c4fe09d43568c5366531dbdfa30'
   ARTICLE_BASE_URL='https://newsapi.org/v2/top-headlines?sources={}&apiKey={}'
   NEWS_API_KEY=os.environ.get('NEWS_API_KEY')
+  SECRET_KEY=os.environ.get('SECRET_KEY')
 class ProdConfig(Config):
   '''
   Production  configuration child class
