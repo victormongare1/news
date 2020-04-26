@@ -16,7 +16,6 @@ def article(id):
   '''
   view articles page function that returns articles from a particular movie source
   '''
-  
   articles=get_article(id)
-  
-  return render_template('articles.html',articles=articles)
+  title=id
+  return render_template('articles.html',articles=articles,title=title)

@@ -1,4 +1,8 @@
 body{
-  background-color: #edf060;
+  background-color: black;
   color: white;
+  font-family: 'Trade Winds';
+}
+h1{
+  font-size: 60px;
 }

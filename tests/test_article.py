@@ -8,7 +8,7 @@ class ArticleTest(unittest.TestCase):
     '''
     setup method that will run before every test
     '''
-    self.newarticle=ARTICLE("mike","news today","null",
+    self.newarticle=ARTICLE("mike","news today",
     "today","content")
   def test_instance(self):
     '''
