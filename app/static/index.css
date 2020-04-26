@@ -1,8 +1,8 @@
 body{
-  background-color: black;
+  background-image: url("{{ url_for('static', filename='ian-schneider-TamMbr4okv4-unsplash.jpg') }}");
   color: white;
-  font-family: 'Trade Winds';
+  font-family: 'Yeon Sung';
 }
 h1{
-  font-size: 60px;
+  font-size: 50px;
 }
