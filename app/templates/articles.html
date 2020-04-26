@@ -1,0 +1,17 @@
+
+{% extends 'base.html'%}
+{% block styles%}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='index.css')}}">
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+  {% for articles in articles %}
+      <h3>{{articles.title}}</h3>
+  {% endfor %}
+    <h1>article works</h1>
+    <a href="/"><button class="btn-xs btn-danger">BACK TO HOME PAGE</button></a>
+</div>
+{% endblock %}

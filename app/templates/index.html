@@ -1,21 +1,32 @@
 {% extends 'base.html'%}
-<!DOCTYPE html>
-<html>
+{% block styles%}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='index.css')}}">
+{% endblock %}
+
   <head>
     <title>{{title}}</title>
   </head>
   <body>
     {% block content %}
     <div class="container">
-    <h1 class="text-center">{{title}}</h1>
+    <h1 class="text-center" id="h3"><b><u>{{title}}</u></b></h1>  
+  
     
-       {% for source in sources%}
+    
+       {% for source in sources %}
+       <div class="row">
+         <div class="col-md-8">
            <h3><b>{{ source.name}}</b></h3>
             <p>{{source.description}}</p>
             <p>Category : {{source.category}} news</p>
-             <a href="{{source.url}}">view more here</a> 
+             <a href="/article/{{source.id}}"><button class="btn-xs btn-success">VIEW MORE</button></a> 
+             <a href="{{source.url}}"><button class="btn-xs btn-primary">GO TO OFFICIAL WEBSITE</button></a>
+          </div>   
+        </div>     
        {% endfor %}
+    
+    
     </div>
     {% endblock %}
   </body>
-</html>

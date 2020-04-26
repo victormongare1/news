@@ -8,7 +8,7 @@ class SourceTest(unittest.TestCase):
     '''
     setup method that will run before every test
     '''
-    self.newsource=SOURCE("ABC-NEWS","trusted news source",
+    self.newsource=SOURCE("abc-news","ABC-NEWS","trusted news source",
     "https://news","general")
   def test_instance(self):
     '''
