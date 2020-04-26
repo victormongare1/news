@@ -12,20 +12,21 @@
     <div class="container">
     <h1 class="text-center" id="h3"><b><u>{{title}}</u></b></h1>  
   
-    
-    
+      <div class="row">
+        <div class="col-sm-12 col-md-12">
        {% for source in sources %}
-       <div class="row">
-         <div class="col-md-8">
+       
+         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 piece ">
            <h3><b><u>{{ source.name}} :</u></b></h3>
             <p>{{source.description}}</p>
             <p>Category : {{source.category}} news</p>
              <a href="/article/{{source.id}}"><button class="btn-xs btn-success">VIEW ARTICLES</button></a> 
-             <a href="{{source.url}}"><button class="btn-xs btn-primary">GO TO OFFICIAL WEBSITE</button></a>
+             <a href="{{source.url}}"><button class="btn-xs btn-danger">GO TO OFFICIAL WEBSITE</button></a>
           </div>   
-        </div>     
+           
        {% endfor %}
-    
+       </div>
+          </div>
     
     </div>
     {% endblock %}
