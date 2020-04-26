@@ -9,11 +9,12 @@
 <div class="container">
 
   <h1 class="text-uppercase"><b><u>{{title}}</u></b></h1>
-  <h2>{{articles}}</h2>
+  
+  <h2>{{articles.author}}</h2>
 
   <a href="/"><button class="btn-xs btn-warning">BACK TO HOME PAGE</button></a>
-  {% for article in articles %}
-      <h3>{{article.title}}</h3>
+  {% for article in articles_result %}
+      <h3>{{article.author}}</h3>
   {% endfor %}
     
 </div>

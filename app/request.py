@@ -42,8 +42,8 @@ def get_article(id):
     if get_article_response['articles']:
       article_results_list = get_article_response['articles']
       article_results = process_results(article_results_list)
-  return article_results  
   
+
 def process_results(source_list):
   '''
   Function  that processes the source result and transform them to a list of Objects
