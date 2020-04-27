@@ -41,7 +41,7 @@ def get_article(id):
     article_results=None
     if get_article_response['articles']:
       article_results_list = get_article_response['articles']
-      article_results = process_results(article_results_list)
+      article_results = process_articles(article_results_list)
   return article_results
 
 def process_results(source_list):
@@ -85,9 +85,9 @@ def process_articles(article_list):
     title= article_item.get('title')
     publishedAt= article_item.get('publishedAt')
     content = article_item.get('content')
-    
+    url=article_item.get('url')
 
     if title:
-      article_object = ARTICLE(author,title,publishedAt,content)
+      article_object = ARTICLE(author,title,publishedAt,content,url)
       article_results.append(article_object)
   return article_results
