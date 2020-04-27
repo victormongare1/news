@@ -1,5 +1,5 @@
 body{
-  background-image: url("{{ url_for('static', filename='ian-schneider-TamMbr4okv4-unsplash.jpg') }}");
+  background-color: black;
   color: white;
   font-family: 'Yeon Sung';
 }
